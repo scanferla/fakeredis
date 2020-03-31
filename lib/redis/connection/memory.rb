@@ -1458,7 +1458,7 @@ class Redis
         when Redlock::Client::RedisInstance::LOCK_SCRIPT
           LOCK_SCRIPT_SHA
         else
-          raise Redis::CommandError, "ERR unknown command 'script'"
+          EXTEND_LIFE_SCRIPT_SHA
         end
       end
 
